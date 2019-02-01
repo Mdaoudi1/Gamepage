@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>YEET THIS WHEAT</title>
+    </head>
+    
+    <body>
+               <!-- Jumbotron -->
+        <div class="container">
+            <div class="jumbotron bg lead">
+                    <h1 class="yeet"><strong>Game Page</strong></h1>
+                    <p>
+                        <em>Featuring Senioritis</em>
+                    </p>
+            </div>
+        
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#links" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span> <!-- only appears for screen readers -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">CDC</a>
+            </div>
+        
+            <!-- Collect the nav links for toggling -->
+            <div class="collapse navbar-collapse" id="links">
+                <ul class="nav navbar-nav">
+                    <li><a href="page2.html">Page 2<span class="sr-only">(current)</span></a></li>
+                    <li><a href="About.html">Contact Me</a></li>
+                </ul>
+        </nav>
+                    
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6">
+                    <p class="para">ROCK, PAPER, OR SCISSORS. Pick one, rock beats scissors, 
+                    scissors beats paper, paper beats rock. You versus the computer.</p>
+                    <label>Type rock, paper, or scissors and click the play button: </label><input id='userInput'><br>
+                    <button class="btn btn-primary btn-block" onclick="playRPS()"><span class="glyphicon glyphicon-exclamation-sign"></span>Play</button>
+                    <p id='userOutput'></p>
+                    <p id='computerOutput'></p>
+                    <p id='rpsOutput'></p>
+                </div>
+                <div class="col-xs-6">
+                    <p class="para">Craps is a dice game in which the players make wagers on the outcome of the roll, 
+                    or a series of rolls, of a pair of dice. Players may wager money against each other 
+                    (playing "street craps") or a bank (playing "casino craps", also known as "table craps",
+                    or often just "craps"). Because it requires little equipment, "street craps" can be played 
+                    in informal settings. While shooting craps, players may use slang terminology to place bets 
+                    and actions.</p>
+                    <button class="btn btn-primary btn-block" onclick="diceRoll()"><span class="glyphicon glyphicon-exclamation-sign"></span>Start the Game</button>
+                    <p id='diceOutput'></p> 
+                </div>
+            </div>
+        </div>
+        </div>
+        <script src='rps.js'></script>
+        <script src='dice.js'></script>
+    </body>
+</html>
